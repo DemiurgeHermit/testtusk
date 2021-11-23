@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+.header{
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    color: #27ae60;
+    background: white;
+    text-transform: uppercase;
+    padding: 13px 24px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.nav{
+    padding: 15px 0px;
+}
+.nav__text{
+    font-family: 'Roboto';
+    font-size: 15px;
+}
+.nav__text{
+    margin-right: 40px;
+}
+.btn{
+    display: block;
+    width: 90px;
+    margin: 5px;
+    padding: 13px 20px 0px 20px;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-size: 15px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(180deg, rgb(39, 174, 96), rgb(35, 157, 87));
+    background: -moz-linear-gradient(180deg, rgb(39, 174, 96), rgb(35, 157, 87));
+    background: linear-gradient(180deg, rgb(39, 174, 96), rgb(35, 157, 87));
+}
+.btn:hover,
+.btn-2:hover{
+    background: -webkit-linear-gradient(180deg, rgb(54, 198, 114), rgb(49, 179, 104));
+    background: -moz-linear-gradient(180deg, rgb(54, 198, 114), rgb(49, 179, 104));
+    background: linear-gradient(180deg, rgb(54, 198, 114), rgb(49, 179, 104));
+}
+.carousel{
+    margin-bottom: 62px;
+}
+.slide{
+    display: none;
+}
+.slide.active{
+    display: block;
+}
+
+.slide__photo{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.info{
+    position: absolute;
+    z-index: 2;
+    top: 160px;
+    right: 350px;
+}
+.slider__title{
+    font-family: 'Roboto';
+    font-size: 55px;
+    font-weight: 100;
+    text-align: center;
+    width: 358px;
+    margin-bottom: 50px;
+}
+.btn-2{
+    display: block;
+    margin: 0 auto;
+    width: 90px;
+    text-align: center;
+    padding: 13px 20px 13px 20px;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-size: 15px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(180deg, rgb(39, 174, 96), rgb(35, 157, 87));
+    background: -moz-linear-gradient(180deg, rgb(39, 174, 96), rgb(35, 157, 87));
+    background: linear-gradient(180deg, rgb(39, 174, 96), rgb(35, 157, 87));
+}
+.arrow{
+    position: absolute;
+    top: 300px;
+    right: 230px;
+    z-index: 3;
+    cursor: pointer;
+}
+.dots-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    z-index: 2;
+    top: 500px;
+    right: 770px;
+}
+
+.dot.active {
+    background-color: #2c3e50;
+    opacity: 1;
+}
+.dot{
+    background-color: #2c3e50; 
+    opacity: 0.5;
+}
+span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #2c3e50; 
+    opacity: 0.5;
+}
+span:last-child{
+    margin-right: 0;
+}
+
+
+.about-me__text{
+    width: 460px;
+}
+.title{
+    margin-bottom: 40px;
+    font-family: 'Roboto';
+    font-size: 35px;
+    font-weight: lighter;
+    color: #444444;
+}
+.text{
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: lighter;
+    margin-bottom: 80px;
+    color: #444444;
+}
+.image-headtitle{
+    font-family: 'Roboto';
+    font-size: 11px;
+    font-weight: lighter;
+}
+.register{
+    background: url('../img/registerbackground.png') no-repeat;
+    background-size: 100%;
+    height: 520px;
+    padding-top: 80px;
+}
+.register-block{
+    width: 462px;
+    margin: 0 auto;
+    background: white;
+    height: 355px;
+}
+.reg-title{
+    font-family: 'Roboto';
+    font-size: 35px;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 100;
+    color: #555555;
+}
+.your__photo{
+    margin-bottom: 130px;
+}
+.form{
+    margin: 0 auto;
+    width: 300px;
+}
+input{
+    display: block;
+    font-family: 'Roboto'; 
+    font-size: 20px;
+    font-weight: 300;
+    width: 300px;
+    margin-bottom: 10px;
+    padding: 18px 0px 18px 18px;
+    background: #f5f5f5;
+    border: none;
+    border-top: 1px #c4c4c4 solid;
+    border-radius: 5px;
+    
+}
+select{
+    width: 300px;
+    font-family: 'Roboto'; 
+    font-size: 20px;
+    font-weight: 300;
+    width: 300px;
+    margin-bottom: 10px;
+    padding: 18px 0px 18px 18px;
+    background: #f5f5f5;
+    border: none;
+    border-top: 1px #c4c4c4 solid;
+    border-radius: 5px;
+}
+
+footer{
+    background: #2c3e50;
+    color: white;
+}
+.footer{
+    text-align: center;
+    padding: 15px 0px;
+}
